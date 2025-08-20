@@ -1,6 +1,6 @@
 variable "sg_ids"{
-    type = string
-    default = "sg-0051e99dd673c085e"
+    type = list(string)
+    default = ["sg-0051e99dd673c085e"]
 }
 
 variable "instance_type"{
