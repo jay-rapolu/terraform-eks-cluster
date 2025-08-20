@@ -1,5 +1,5 @@
 resource "aws_instance" "this" {
-  ami           = var.ami_id
+  ami           = data.aws_ami.rhel.id
   instance_type = var.instance_type
   vpc_security_group_ids = var.sg_ids
 
